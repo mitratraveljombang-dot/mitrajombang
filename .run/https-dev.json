@@ -1,0 +1,10 @@
+{
+    "php_pid":  16852,
+    "proxy_pid":  16184,
+    "php_port":  18080,
+    "https_port":  9999,
+    "php_url":  "http://127.0.0.1:18080",
+    "https_url":  "https://localhost:9999",
+    "https_url_lan":  "https://192.168.1.254:9999",
+    "started_at":  "2026-03-23T21:35:27"
+}

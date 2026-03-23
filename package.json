@@ -7,7 +7,9 @@
   "scripts": {
     "test": "echo \"No tests specified\"",
     "start": "cordova run android",
-    "build": "cordova build android --release"
+    "build": "cordova build android --release",
+    "dev:https": "powershell -ExecutionPolicy Bypass -File scripts/start-https-dev.ps1",
+    "dev:https:stop": "powershell -ExecutionPolicy Bypass -File scripts/stop-https-dev.ps1"
   },
   "keywords": [
     "ecosystem:cordova"
@@ -16,7 +18,9 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "cordova-android": "^15.0.0",
-    "cordova-plugin-firebasex": "^19.1.0"
+    "cordova-plugin-device": "^3.0.0",
+    "cordova-plugin-firebasex": "^19.1.0",
+    "cordova-plugin-local-notification": "^1.2.3"
   },
   "cordova": {
     "platforms": [
@@ -56,6 +60,9 @@
         "ANDROID_GRPC_OKHTTP": "1.75.0",
         "ANDROID_CREDENTIALS_VERSION": "1.5.0",
         "ANDROID_GOOGLEID_VERSION": "1.2.0"
+      },
+      "cordova-plugin-local-notification": {
+        "ANDROIDX_CORE_VERSION": "1.12.0"
       }
     }
   }
