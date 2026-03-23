@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "850161274982",
+    "project_id": "mitratravel",
+    "storage_bucket": "mitratravel.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:850161274982:android:7e19a3ae5896da35221da7",
+        "android_client_info": {
+          "package_name": "com.mitra.travel"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3n1ZjV_GlGwh3lpMy__E7Y2rqqtk79UA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.mitra.travel" version="1.0.0" xmlns="http://www.w3.org/ns/widgets"
+    xmlns:cdv="http://cordova.apache.org/ns/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>Mitraapp</name>
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
+    <author email="mitratraveljombang@gmail.com" href="https://mitratravel.id/">
+        Apache Cordova Team
+    </author>
+    <content src="index.html" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <platform name="android">
+        <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+        <resource-file src="res/drawable/logo.png"
+            target="app/src/main/res/drawable/ic_notification.png" />
+        <resource-file src="res/raw/notif.mp3" target="app/src/main/res/raw/notif.mp3" />
+        <resource-file src="res/drawable/logo.png" target="app/src/main/res/mipmap-mdpi/ic_launcher.png" />
+        <resource-file src="res/drawable/logo.png" target="app/src/main/res/mipmap-hdpi/ic_launcher.png" />
+        <resource-file src="res/drawable/logo.png" target="app/src/main/res/mipmap-xhdpi/ic_launcher.png" />
+        <resource-file src="res/drawable/logo.png" target="app/src/main/res/mipmap-xxhdpi/ic_launcher.png" />
+        <resource-file src="res/drawable/logo.png" target="app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" />
+        <resource-file src="res/drawable/logo.png" target="app/src/main/res/mipmap-ldpi/ic_launcher.png" />
+
+        <preference name="FirebaseNotificationDefaultIcon" value="ic_notification" />
+        <preference name="FirebaseNotificationDefaultColor" value="#FF0000" />
+    </platform>
+
+</widget>
