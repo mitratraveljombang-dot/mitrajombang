@@ -13,11 +13,24 @@
     <access origin="http://192.168.1.254:9999" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
+    <preference name="SplashScreen" value="screen" />
+    <preference name="SplashScreenDelay" value="3000" />
+    <preference name="ShowSplashScreen" value="true" />
     <platform name="android">
         <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
         <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
             <application android:usesCleartextTraffic="true" />
         </edit-config>
+        <!-- Konfigurasi Splash Screen menggunakan logo.png -->
+        <splash src="res/drawable/logo.png" density="land-hdpi"/>
+        <splash src="res/drawable/logo.png" density="land-ldpi"/>
+        <splash src="res/drawable/logo.png" density="land-mdpi"/>
+        <splash src="res/drawable/logo.png" density="land-xhdpi"/>
+        <splash src="res/drawable/logo.png" density="port-hdpi"/>
+        <splash src="res/drawable/logo.png" density="port-ldpi"/>
+        <splash src="res/drawable/logo.png" density="port-mdpi"/>
+        <splash src="res/drawable/logo.png" density="port-xhdpi"/>
+
         <resource-file src="res/drawable/logo.png"
             target="app/src/main/res/drawable/ic_notification.png" />
         <resource-file src="res/raw/notif.mp3" target="app/src/main/res/raw/notif.mp3" />

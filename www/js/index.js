@@ -126,27 +126,26 @@ function onDeviceReady() {
   // 4. Menangani notifikasi yang masuk
   window.FirebasePlugin.onMessageReceived(
     function (message) {
-      alert("Pesan diterima: ", message);
+      console.log("Pesan diterima: ", message);
 
       if (message.tap === "background") {
         // Notifikasi diklik dari background
-        alert(
-          "Pengguna mengklik notifikasi dengan data rute: " +
-            message.rute_tujuan,
-        );
+        console.log("Pengguna mengklik notifikasi background. Rute: " + message.rute_tujuan);
       } else {
         // Notifikasi diterima saat aplikasi sedang terbuka (foreground)
         cordova.plugins.notification.local.schedule({
           title: message.title,
           text: message.body,
           foreground: true,
-          smallIcon: "res://ic_stat_notification",
-          sound: "res://notif",
+          channel: "fcm_default_channel", // Samakan channel ID dengan background agar suara & prioritas sama
+          priority: 2, // Prioritas tinggi
+          smallIcon: "res://ic_notification", // Menggunakan logo.png yang dicopy ke ic_notification
+          sound: "res://notif", // Menggunakan notif.mp3
         });
       }
     },
     function (error) {
-      alert("Gagal menerima pesan: " + error);
+      console.error("Gagal menerima pesan: " + error);
     },
   );
 }
